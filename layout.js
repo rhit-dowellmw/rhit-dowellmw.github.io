@@ -15,6 +15,7 @@ document.getElementById("site-footer").innerHTML = `
   <a href="https://github.com/rhit-dowellmw">GitHub</a>
 `;
 
+// aria-current: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-current
 const currentPage = location.pathname.split("/").pop() || "index.html";
 document.querySelectorAll("#site-header nav a").forEach((link) => {
   if (link.getAttribute("href") === currentPage) {
