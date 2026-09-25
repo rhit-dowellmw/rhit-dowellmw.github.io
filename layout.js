@@ -11,15 +11,13 @@ const NAV_HTML = `
 
 const FOOTER_HTML = `
   <p>&copy; ${new Date().getFullYear()} Max Dowell</p>
-  <a href="[YOUR LINKEDIN URL]">LinkedIn</a>
-  <a href="[YOUR HANDSHAKE URL]">Handshake</a>
+  <a href="https://app.joinhandshake.com/profiles/s72mhf">Handshake</a>
   <a href="https://github.com/rhit-dowellmw">GitHub</a>
 `;
 
 document.getElementById("site-header").innerHTML = NAV_HTML;
 document.getElementById("site-footer").innerHTML = FOOTER_HTML;
 
-// Mark the link for the current page so it can be styled and read by screen readers
 const currentPage = location.pathname.split("/").pop() || "index.html";
 document.querySelectorAll("#site-header nav a").forEach((link) => {
   if (link.getAttribute("href") === currentPage) {
