@@ -1,22 +1,19 @@
 // Shared navbar and footer for every page, so the markup lives in one place.
 // Each page just needs <header id="site-header"></header> and <footer id="site-footer"></footer>.
 
-const NAV_HTML = `
-  <nav aria-label="Main">
+document.getElementById("site-header").innerHTML = `
+  <nav>
     <a href="index.html">Home</a>
     <a href="resume.html">Resume</a>
     <a href="portfolio.html">Portfolio</a>
   </nav>
 `;
 
-const FOOTER_HTML = `
+document.getElementById("site-footer").innerHTML = `
   <p>&copy; ${new Date().getFullYear()} Max Dowell</p>
   <a href="https://app.joinhandshake.com/profiles/s72mhf">Handshake</a>
   <a href="https://github.com/rhit-dowellmw">GitHub</a>
 `;
-
-document.getElementById("site-header").innerHTML = NAV_HTML;
-document.getElementById("site-footer").innerHTML = FOOTER_HTML;
 
 const currentPage = location.pathname.split("/").pop() || "index.html";
 document.querySelectorAll("#site-header nav a").forEach((link) => {

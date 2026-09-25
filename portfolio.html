@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Max Dowell</title>
   <link rel="stylesheet" href="style.css">
-  <script src="layout.js" defer></script>
-  <script src="portfolio.js" defer></script>
 </head>
 <body>
   <header id="site-header"></header>
@@ -14,51 +12,57 @@
   <main>
     <h1>Portfolio</h1>
 
-    <section class="project-grid" aria-labelledby="software-heading">
-      <h2 id="software-heading">Software Projects</h2>
+    <section>
+      <h2>Software Projects</h2>
+      <div class="project-grid">
+        <article>
+          <h3>Unity Games</h3>
+          <img src="./assets/projects/unity-games.png" alt="Screenshot of Unity Splash Screen">
+          <p>Independently developed games implementing gameplay systems, algorithms, graphics, and interactive mechanics, built to explore software architecture and new programming concepts.</p>
+          <p>Technologies: C#, Unity</p>
+          <p>2020 &ndash; Present</p>
+        </article>
 
-      <article>
-        <h3>Unity Games</h3>
-        <img src="./assets/projects/unity-games.png" alt="Screenshot of Unity Splash Screen">
-        <p>Independently developed games implementing gameplay systems, algorithms, graphics, and interactive mechanics, built to explore software architecture and new programming concepts.</p>
-        <p>Technologies: C#, Unity</p>
-        <p>2020 &ndash; Present</p>
-      </article>
-
-      <article>
-        <h3>Portfolio Website</h3>
-        <img src="./assets/projects/you-are-here.jpg" alt="You are here sign">
-        <p>This site: a personal portfolio hosted on GitHub Pages, with a shared navbar and footer loaded by JavaScript so the markup is not duplicated across pages.</p>
-        <p>Technologies: HTML, CSS, JavaScript</p>
-        <p><a href="https://github.com/rhit-dowellmw/rhit-dowellmw.github.io">View source on GitHub</a></p>
-      </article>
+        <article>
+          <h3>Portfolio Website</h3>
+          <img src="./assets/projects/you-are-here.jpg" alt="You are here sign">
+          <p>This site: a personal portfolio hosted on GitHub Pages, with a shared navbar and footer loaded by JavaScript so the markup is not duplicated across pages.</p>
+          <p>Technologies: HTML, CSS, JavaScript</p>
+          <p><a href="https://github.com/rhit-dowellmw/rhit-dowellmw.github.io">View source on GitHub</a></p>
+        </article>
+      </div>
     </section>
 
-    <section class="project-grid" aria-labelledby="embedded-heading">
-      <h2 id="embedded-heading">Embedded Systems &amp; Electronics</h2>
+    <section>
+      <h2>Embedded Systems &amp; Electronics</h2>
+      <div class="project-grid">
+        <article>
+          <h3>RGB LED Matrix</h3>
+          <img src="./assets/projects/led-matrix.jpg" alt="Photo of an Arduino-driven RGB LED matrix">
+          <p>An Arduino-based RGB LED matrix display, integrating a microcontroller with custom LED wiring to create an interactive hardware/software system.</p>
+          <p>Technologies: C++, Arduino</p>
+          <p>2020 &ndash; Present</p>
+        </article>
 
-      <article>
-        <h3>RGB LED Matrix</h3>
-        <img src="./assets/projects/led-matrix.jpg" alt="Photo of an Arduino-driven RGB LED matrix">
-        <p>An Arduino-based RGB LED matrix display, integrating a microcontroller with custom LED wiring to create an interactive hardware/software system.</p>
-        <p>Technologies: C++, Arduino</p>
-        <p>2020 &ndash; Present</p>
-      </article>
-
-      <article>
-        <h3>Robotic Arm</h3>
-        <img src="./assets/projects/robotic-arm.webp" alt="Photo of an Arduino-controlled robotic arm">
-        <p>A robotic arm driven by motors and programmed on an Arduino microcontroller.</p>
-        <p>Technologies: C++, Arduino</p>
-        <p>2020 &ndash; Present</p>
-      </article>
+        <article>
+          <h3>Robotic Arm</h3>
+          <img src="./assets/projects/robotic-arm.webp" alt="Photo of an Arduino-controlled robotic arm">
+          <p>A robotic arm driven by motors and programmed on an Arduino microcontroller.</p>
+          <p>Technologies: C++, Arduino</p>
+          <p>2020 &ndash; Present</p>
+        </article>
+      </div>
     </section>
-    <section aria-labelledby="repos-heading">
-      <h2 id="repos-heading">GitHub Repositories</h2>
+
+    <section>
+      <h2>GitHub Repositories</h2>
       <ul id="repo-list"></ul>
     </section>
   </main>
 
   <footer id="site-footer"></footer>
+
+  <script src="layout.js"></script>
+  <script src="portfolio.js"></script>
 </body>
 </html>
